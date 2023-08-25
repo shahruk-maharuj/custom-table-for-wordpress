@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+      }
+
+      .cfyp {
+        height: 55px;
+      }
+      .costs-compare-table tr td.costs-table-color-odd {
+        background-color: #ed464d;
+        color: #ffffff;
+      }
+
+      .costs-compare-table tr td.costs-table-color-even {
+        background-color: #b43141;
+        color: #ffffff;
+      }
+
+      .costs-compare-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        overflow: hidden;
+      }
+
+      .costs-compare-table tbody th,
+      .costs-compare-table tbody td {
+        padding: 15px;
+        text-align: left;
+        overflow: hidden;
+      }
+
+      .costs-compare-table tbody td:last-child,
+      .costs-compare-table tbody td:nth-child(2) {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .costs-compare-table th {
+        padding: 15px;
+      }
+
+      .costs-compare-table th:nth-child(1) {
+        text-align: left;
+        color: #6d758d;
+        font-weight: 600;
+        font-size: 16px !important;
+      }
+
+      .costs-compare-table th:nth-child(2),
+      .costs-compare-table th:nth-child(3) {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .costs-compare-table-outer {
+        overflow-x: auto;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.085);
+        padding: 10px;
+        border-radius: 18px;
+        background-color: white;
+      }
+      
+      .costs-table-last-row,
+      .costs-table-last-row .costs-table-color-odd {
+        background-color: #ed464d !important;
+        padding: 20px;
+        color: white;
+        border: none !important;
+        border-radius: 0px 0px 20px 0px;
+      }
+
+      .tg-c3ow span {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .costs-compare-first-row .costs-table-color-odd {
+        border-radius: 20px 20px 0px 0px;
+      }
+
+      .costs-compare-table tr:nth-last-child(2) .costs-table-color-odd {
+        border-radius: 0px 0px 20px 20px;
+      }
+
+      .final-price {
+        border-radius: 0px 0px 0px 20px;
+        font-size: 18px !important;
+        font-weight: 800px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="costs-compare-table-wrapper">
+      <div class="costs-compare-table-outer">
+        <table class="costs-compare-table">
+          <thead>
+            <tr>
+              <th class="tg-description"></th>
+              <th class="tg-c3ow">Estate Agents<span>9 months</span></th>
+              <th class="tg-c3ow">
+                <img
+                  src="https://cashforyourproperty.co.uk/wp-content/uploads/2020/11/Group-458.svg"
+                  alt=""
+                  class="cfyp"
+                /><span>7 days</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="costs-compare-first-row">
+              <td class="tg-description">Advertised Price</td>
+              <td class="tg-c3ow">£100,000</td>
+              <td class="tg-c3ow costs-table-color-odd first-row-td">
+                £100,000
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-description">True Market Value</td>
+              <td class="tg-c3ow">£95,000</td>
+              <td class="tg-c3ow costs-table-color-even">£80,000</td>
+            </tr>
+            <tr>
+              <td class="tg-description">Price after Survey</td>
+              <td class="tg-c3ow">£92,500</td>
+              <td class="tg-c3ow costs-table-color-odd">£80,000</td>
+            </tr>
+            <tr>
+              <td class="tg-description cosmetic-repairs">
+                Price after Agent Fees
+              </td>
+              <td class="tg-c3ow">£91,500</td>
+              <td class="tg-c3ow costs-table-color-even">£80,000</td>
+            </tr>
+            <tr>
+              <td class="tg-description">Price after Conveyancing</td>
+              <td class="tg-c3ow">£91,185</td>
+              <td class="tg-c3ow costs-table-color-odd">£80,000</td>
+            </tr>
+            <tr>
+              <td class="tg-description">Price after Mortgage</td>
+              <td class="tg-c3ow">£88,965</td>
+              <td class="tg-c3ow costs-table-color-even">£80,000</td>
+            </tr>
+            <tr>
+              <td class="tg-description">Solicitors Fee (£1,200)</td>
+              <td class="tg-c3ow">£87,765</td>
+              <td class="tg-c3ow costs-table-color-odd">£80,000</td>
+            </tr>
+            <tr>
+              <td class="tg-description">Price after monthly bills</td>
+              <td class="tg-c3ow">£83,850</td>
+              <td class="tg-c3ow costs-table-color-even">£80,000</td>
+            </tr>
+            <tr class="costs-table-last-row">
+              <td class="tg-description final-price">Final Price</td>
+              <td class="tg-c3ow">£81,613</td>
+              <td class="tg-c3ow costs-table-color-odd last-row-td">£80,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
